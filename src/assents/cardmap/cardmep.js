@@ -1,0 +1,41 @@
+export const CardN = [
+     {
+        name:"Name",
+        test:"MacBook Air 13",
+        outerWidth:"100%",
+        md:"2.9",
+        sn:"3"
+     },
+     {
+        name:"Color",
+        test:"Silver",
+        wi:"20px",
+        mg:"11px",
+        wd:"60%",
+        md:"2.2",
+        sn:"2.6"
+     },
+     {
+        name:"Quantity",
+        test:"1",
+        wd:"60%",
+        md:"1.3",
+        sn:"1.9"
+     },
+     {
+        name:"Price",
+        test:"$2000",
+        ri:"right",
+        wd:"60%",
+        md:"1.3",
+        sn:"1.9"
+     },
+     {
+        name:"Total",
+        test:"$2000",
+        ri:"right",
+        wd:"60%",
+        md:"1.3",
+        sn:"1.9"
+     },
+]

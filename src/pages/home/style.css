@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+    margin: -665px 0 0 !important;
+    position: absolute;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+    background-color: white !important;
+}
+
+.alice-carousel__dots {
+    margin: 0px !important;
+}
+
+.orqafon {
+    background-image: url(../../assents/imgs/banner_2_background.jpg.webp);
+    height: auto;
+    width: 100%;
+}
+
+/* 
+.jtKTCe{
+    margin-left: -1070px;
+    margin-top: 300px !important;
+    position: absolute;
+} */
+
+.rasmm {
+    background-image: url(../../assents/imgs/trends_background.jpg.webp);
+}
+
+/* .jtKTCe{
+    display: none !important;
+} */
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.cVXxbE {
+    box-sizing: border-box;
+    padding: 0;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+    border: none;
+    margin: 5px;
+    background-color: #0e8ce4 !important;
+    font-size: 1.3em;
+    content: "";
+    height: 15px !important;
+    width: 15px !important;
+    box-shadow: none !important;
+    border-radius: 50%;
+    outline: none;
+}
+
+.ezKHIn {
+    box-sizing: border-box;
+    padding: 0;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+    border: none;
+    margin: 5px;
+    background-color: rgba(103, 58, 183, .5);
+    font-size: 1.3em;
+    content: "";
+    height: 15px !important;
+    width: 15px !important;
+    box-shadow: none !important;
+    border-radius: 50%;
+    outline: none;
+    background-color: #e8e8e8 !important;
+}
+
+
+.dadat {
+    background-image: url(../../assents/imgs/banner_background.jpg.webp);
+    width: 100%;
+    height: auto;
+}
+
+.salomdunyo {
+    background-image: url(../../assents/imgs/banner_product.png.webp);
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+}
+
+
+.shopnew{
+    position: absolute;
+    top: 25px;
+    right: 2px;
+    width: 36px;
+    height: 36px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 5px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 200ms ease 0s;
+    opacity: 1;
+}
+.shopicon{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(204, 204, 204);
+    line-height: 43px;
+    pointer-events: none;
+    z-index: 0;
+    transition: all 200ms ease 0s;
+}
+#Homedgfawfv .Slxdj {
+    background: #fff !important;
+    box-shadow: none !important;
+    border-radius: none;
+    font-size: 18px;
+    color: #999;
+}
+#Homedgfawfv .kXteup {
+    background: #fff !important;
+    box-shadow: none !important;
+    border-radius: none;
+    font-size: 18px;
+    color: #999;
+}
+#Homedgfawfv .jtKTCe{
+    display: none !important;
+}

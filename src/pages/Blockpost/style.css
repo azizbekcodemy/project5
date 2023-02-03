@@ -1,0 +1,60 @@
+.salom {
+    background-image: url(../../assents/imgs/blog_single_background.jpg.webp);
+    width: 100%;
+    height: 64vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.wert {
+    margin-top: 43px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.qwer {
+    background-image: url(../../assents/imgs/quote.png.webp);
+    width: 20px;
+    height: 18px;
+}
+.poll{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);
+    margin-top: 28px;
+    line-height: 1.875;
+    text-align: center;
+}
+.sad{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(0,0,0,0.7);
+    line-height: 2;
+}
+.sam{  
+    width: 100%;
+    height: 290px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 10%);
+    z-index: 0;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+#sasla{
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 21px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    /* font-weight: 600; */
+}
+

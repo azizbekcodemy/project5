@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Grid, Link, Typography } from "@mui/material"
+import { Box, Container, Grid, Link, Typography } from "@mui/material"
 import Slider from '@mui/material/Slider';
 import shopimg from "./imgs/shop_background.jpg"
 import { ShopCate, ShopLin, ShopTavar } from '../../assents/shopmap/shopmep'
@@ -10,6 +10,37 @@ import Select from '@mui/material/Select';
 import { FaHeart } from 'react-icons/fa';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import "./style.css"
+
+
+import HomCarPasImg1 from '../../assents/imgs/brands_1.jpg.webp'
+import HomCarPasImg2 from '../../assents/imgs/brands_2.jpg.webp'
+import HomCarPasImg3 from '../../assents/imgs/brands_3.jpg.webp'
+import HomCarPasImg4 from '../../assents/imgs/brands_4.jpg.webp'
+import HomCarPasImg5 from '../../assents/imgs/brands_5.jpg.webp'
+import HomCarPasImg6 from '../../assents/imgs/brands_6.jpg.webp'
+import HomCarPasImg7 from '../../assents/imgs/brands_7.jpg.webp'
+import HomCarPasImg8 from '../../assents/imgs/brands_8.jpg.webp'  
+import Carousel from 'react-elastic-carousel'
+import { Kerak1 } from '../../assents/homemap';
+
+
+const breakPoints32 = [
+  { width: 100, itemsToShow: 1, showArrows: false },
+  { width: 550, itemsToShow: 2, showArrows: false },
+  { width: 768, itemsToShow: 6, showArrows: false },
+  { width: 1200, itemsToShow: 5, showArrows: false },
+];
+
+
+
+const breakPoints54 = [
+  { width: 1, itemsToShow: 2 },
+  { width: 300, itemsToShow: 4 },
+  { width: 600, itemsToShow: 6 },
+  { width: 900, itemsToShow: 8 },
+  { width: 1100, itemsToShow: 8 },
+];
+
 
 function valueLabelFormat(value) {
 
@@ -341,6 +372,138 @@ function Shop() {
                     </Box>
                 </Grid>
             </Grid>
+            <Box sx={{ p: "80px 0", background: "#eff6fa" }}>
+                <Container>
+                    <Box sx={{ width: "100%", height: "40px", display: "flex", justifyContent: "space-between", alignItems: "center", }}>
+                        <Typography sx={{ fontSize: { lg: "24px", md: "24px", sm: "24px", xs: "0" }, color: "#000000", fontWeight: "600" }}>Latest Reviews</Typography>
+                        <Box sx={{ display: "flex" }}>
+
+                        </Box>
+                    </Box>
+                    <Box sx={{ width: "100%", height: "1px", background: "#dadada", m: "5px 0 25px" }}></Box>
+
+                    <Grid container spacing={2}>
+                        <Carousel breakPoints={breakPoints32} autoPlaySpeed={10000}>
+                            {Kerak1.map((v) => (
+                                <Grid item xs={10.5}>
+                                    <Box sx={{ width: "100%", height: "auto", background: "white", p: "25px", borderRadius: "8px" }}>
+                                        <Grid container spacing={2}>
+                                            <Grid item xs={12} sx={{ display: "flex", justifyContent: "center", }} >
+                                                <Box sx={{ width: "115px", height: "115px", p: "5px", }}>
+                                                    <img src={v.img} alt="" style={{ width: "100%", height: "100%" }} />
+                                                </Box>
+
+                                            </Grid>
+                                            <Grid item xs={12} >
+                                                <Typography sx={{ fontSize: "16px", mb: "5px", mt: "10px", fontWeight: "600", color: "black", textAlign: "center" }}>{v.narx}</Typography>
+                                                <Typography sx={{ fontSize: "13px", mb: "5px", mt: "10px", fontWeight: "500", color: "black", textAlign: "center" }}>{v.satr}</Typography>
+                                            </Grid>
+                                        </Grid>
+                                    </Box>
+
+                                </Grid>
+                            ))}
+                        </Carousel>
+                    </Grid>
+
+                </Container>
+            </Box>
+            <Box id='Homedgfawfv' sx={{
+                margin: '90px 0'
+            }}>
+                <Container>
+                    <div>
+                        <div>
+                            <Carousel breakPoints={breakPoints54} style={{
+                                border: 'solid 1px #e8e8e8',
+                                boxShadow: '0px 1px 5px rgb(0 0 0 / 10%)',
+                                padding: '0 30px'
+                            }}>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg1} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg2} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg3} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg4} width={'112px'} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg5} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg6} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg7} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg8} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg1} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg2} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg3} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg4} width={'112px'} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg5} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg6} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }}>
+                                    <Typography>
+                                        <img src={HomCarPasImg7} />
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', alignItems: 'center', height: '130px' }} >
+                                    <Typography>
+                                        <img src={HomCarPasImg8} />
+                                    </Typography>
+                                </Box>
+                            </Carousel>
+                        </div>
+                    </div>
+                </Container>
+            </Box>
         </>
     )
 }

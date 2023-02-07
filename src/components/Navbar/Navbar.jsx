@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import NavImg1 from '../../assents/imgs/phone.png.webp';
 import NavImg2 from '../../assents/imgs/mail.png.webp';
 import NavImg3 from '../../assents/imgs/user.svg';
@@ -176,103 +176,96 @@ function Navbar() {
                     </Container>
                 </Box>
                 <Container>
-                    <Box sx={{
-                        height: { xl: '175px', lg: '175px', md: '175px', sm: '175px', xs: '75px', },
-                        width: '100%',
-                        alignItems: 'center',
-                        display: 'flex'
-                    }}>
-                        <Box sx={{ width: '100%' }}>
-                            <Box sx={{
-                                alignItems: 'center',
-                                display: 'flex',
-                            }}>
-                                <Box sx={{
-                                    display: 'flex',
-                                    width: '100%',
-                                    alignItems: 'center',
-                                }} id='adgfshbdgn'>
-                                    <Box sx={{ paddingRight: '30px' }}>
-                                        <Typography sx={{
-                                            fontSize: { xl: '36px', lg: '36px', md: '36px', sm: '36px', xs: '24px' },
-                                            fontWeight: '600',
-                                            color: '#0e8ce4'
-                                        }}>
-                                            OneTech
+                   
+                    <Box sx={{p:{lg:"60px 0", md:"60px 0", sm:"25px 0", xs:"20px 0"}}}>
+                        <Grid container spacing={2}>
+                            <Grid item lg={2} md={2} sm={6}>
+                                <Box sx={{ paddingRight: '0px' }}>
+                                    <Typography sx={{
+                                        fontSize: { xl: '36px', lg: '36px', md: '36px', sm: '36px', xs: '24px' },
+                                        fontWeight: '600',
+                                        color: '#0e8ce4'
+                                    }}>
+                                        OneTech
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                            <Grid item lg={6} md={6} sm={6}>
+                                <Box id='drxtfgyhjk'>
+                                    <Box sx={{ width: '50%', height: '100%' }}>
+                                        <input type="text" id='zxcvhkcyf' placeholder="Search for products..." />
+                                    </Box>
+                                    <Box sx={{
+                                        width: '1px',
+                                        height: '28px',
+                                        background: '#e5e5e5'
+                                    }}></Box>
+                                    <Box sx={{ width: '50%', height: '100%' }}>
+                                        <React.Fragment>
+                                            <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
+                                                <Box onClick={handleToggle}>
+                                                    <Link onClick={handleClick} id='wsearsdgfh'>
+                                                        {options[selectedIndex]}
+                                                        <span id='asfhjke64cds'><FaChevronDown /></span>
+                                                    </Link>
+                                                </Box>
+                                            </ButtonGroup>
+                                            <Popper
+                                                sx={{
+                                                    zIndex: 1,
+                                                }}
+                                                open={open}
+                                                anchorEl={anchorRef.current}
+                                                role={undefined}
+                                                transition
+                                                disablePortal
+                                            >
+                                                {({ TransitionProps, placement }) => (
+                                                    <Grow
+                                                        {...TransitionProps}
+                                                        style={{
+                                                            transformOrigin:
+                                                                placement === 'bottom' ? 'center top' : 'center bottom',
+                                                        }}
+                                                    >
+                                                        <Paper>
+                                                            <ClickAwayListener onClickAway={handleClose}>
+                                                                <MenuList id="split-button-menu" autoFocusItem>
+                                                                    {options.map((option, index) => (
+                                                                        <MenuItem
+                                                                            key={option}
+                                                                            selected={index === selectedIndex}
+                                                                            onClick={(event) => handleMenuItemClick(event, index)}
+                                                                        >
+                                                                            {option}
+                                                                        </MenuItem>
+                                                                    ))}
+                                                                </MenuList>
+                                                            </ClickAwayListener>
+                                                        </Paper>
+                                                    </Grow>
+                                                )}
+                                            </Popper>
+                                        </React.Fragment>
+                                    </Box>
+                                    <Box sx={{
+                                        height: '100%'
+                                    }}>
+                                        <Typography id='qSWERTYUIO3545'>
+                                            <img src={NavImg4} alt="" />
                                         </Typography>
                                     </Box>
-                                    <Box id='drxtfgyhjk'>
-                                        <Box sx={{ width: '50%', height: '100%' }}>
-                                            <input type="text" id='zxcvhkcyf' placeholder="Search for products..." />
-                                        </Box>
-                                        <Box sx={{
-                                            width: '1px',
-                                            height: '28px',
-                                            background: '#e5e5e5'
-                                        }}></Box>
-                                        <Box sx={{ width: '50%', height: '100%' }}>
-                                            <React.Fragment>
-                                                <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-                                                    <Box onClick={handleToggle}>
-                                                        <Link onClick={handleClick} id='wsearsdgfh'>
-                                                            {options[selectedIndex]}
-                                                            <span id='asfhjke64cds'><FaChevronDown /></span>
-                                                        </Link>
-                                                    </Box>
-                                                </ButtonGroup>
-                                                <Popper
-                                                    sx={{
-                                                        zIndex: 1,
-                                                    }}
-                                                    open={open}
-                                                    anchorEl={anchorRef.current}
-                                                    role={undefined}
-                                                    transition
-                                                    disablePortal
-                                                >
-                                                    {({ TransitionProps, placement }) => (
-                                                        <Grow
-                                                            {...TransitionProps}
-                                                            style={{
-                                                                transformOrigin:
-                                                                    placement === 'bottom' ? 'center top' : 'center bottom',
-                                                            }}
-                                                        >
-                                                            <Paper>
-                                                                <ClickAwayListener onClickAway={handleClose}>
-                                                                    <MenuList id="split-button-menu" autoFocusItem>
-                                                                        {options.map((option, index) => (
-                                                                            <MenuItem
-                                                                                key={option}
-                                                                                selected={index === selectedIndex}
-                                                                                onClick={(event) => handleMenuItemClick(event, index)}
-                                                                            >
-                                                                                {option}
-                                                                            </MenuItem>
-                                                                        ))}
-                                                                    </MenuList>
-                                                                </ClickAwayListener>
-                                                            </Paper>
-                                                        </Grow>
-                                                    )}
-                                                </Popper>
-                                            </React.Fragment>
-                                        </Box>
-                                        <Box sx={{
-                                            height: '100%'
-                                        }}>
-                                            <Typography id='qSWERTYUIO3545'>
-                                                <img src={NavImg4} alt="" />
-                                            </Typography>
-                                        </Box>
-                                    </Box>
+                                </Box>
+                            </Grid>
+                            <Grid item lg={4} md={4} sm={12} xs={8}>
+                                <Box sx={{ display: "flex", justifyContent:"right",mt:{lg:"0", md:"0", sm:"-70px" , xs:"0"}}}>
                                     <Box sx={{ display: 'flex', width: '55%', justifyContent: 'right' }}>
                                         <Box>
                                             <img src={NavImg5} alt="" id='gdjsdnndeSewf' />
                                         </Box>
                                         <Box sx={{
                                             marginLeft: '14px',
-                                            marginRight: { xl: '50px', lg: '50px', md: '50px', sm: '0px', xs: '10px' }
+                                            marginRight: { xl: '50px', lg: '50px', md: '50px', sm: '25px', xs: '10px' },
                                         }}>
                                             <Typography sx={{
                                                 fontSize: '18px',
@@ -341,11 +334,9 @@ function Navbar() {
                                         </Box>
                                     </Box>
                                 </Box>
-                            </Box>
-                        <Box>
-                            <Tush />
-                        </Box>
-                        </Box>
+                            </Grid>
+
+                        </Grid>
                     </Box>
                 </Container>
             </Box>
@@ -355,7 +346,7 @@ function Navbar() {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'space-between',
-                        background: {xl: 'transparent', lg: 'transparent', md: 'transparent', sm: '#0e8ce4', xs: '#0e8ce4' }
+                        background: { xl: 'transparent', lg: 'transparent', md: 'transparent', sm: '#0e8ce4', xs: '#0e8ce4' }
                     }}>
                         <Box>
                             <Box id='NavTepJYoz30'>
